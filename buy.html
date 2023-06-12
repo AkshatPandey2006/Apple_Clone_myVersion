@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Apple (India)</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <style>
+    .custom-card {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+
+<body style="background-color: black;" class="m-0 p-0">
+
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="home.html"><img src="logo.png" style="height: 40px; width: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mac</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buy.html">iPhone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">iPad</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="product1">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <img src="3.jpg" class="img-fluid" alt="Product Image">
+            </div>
+            <div class="col-lg-6 col-md-12 text-white">
+              <h2>Iphone 14 Pro</h2>
+              <p>Price: $999</p>
+              <p>The iPhone 14 Pro is a sleek and powerful smartphone that pushes the boundaries of mobile technology. With its
+                elegant design and advanced features, it offers an unparalleled user experience. Powered by the A16 Bionic chip, it
+                delivers lightning-fast performance and seamless multitasking. The Super Retina XDR display provides vibrant colors
+                and incredible clarity for an immersive visual experience. The advanced camera system captures stunning photos and
+                videos in any lighting condition, unleashing your creativity. With enhanced security features like Face ID and
+                compatibility with 5G networks, the iPhone 14 Pro ensures your data remains protected and offers faster download
+                speeds.</p>
+              <a href="#" class="btn btn-primary" onclick="addToCart()">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-white">
+        <div class="border-primary" id="cartContainer"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-3 mx-auto d-flex justify-content-center product">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-3 custom-card text-center mx-auto d-flex justify-content-center">
+          <img src="8.jpeg" class="card-img-top img-fluid" alt="Image 1">
+          <div class="card-body">
+            <h2 class="card-title">MacBook Pro</h2>
+            <p class="card-text">Impressively Big. Impossibly Thin.</p>
+          </div>
+          <div class="buy-iphone mb-3 text-center">
+            <a href="#" class="btn btn-outline-secondary btn-rounded">Buy Now</a>
+            <a href="#" class="btn btn-outline-secondary btn-rounded">Learn More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-3 custom-card text-center mx-auto d-flex justify-content-center">
+          <img src="11.jpg" class="card-img-top img-fluid" alt="Image 2">
+          <div class="card-body">
+            <h2 class="card-title">iPad</h2>
+            <p class="card-text">Lovable. Drawable. Magical</p>
+          </div>
+          <div class="buy-iphone mb-3 text-center">
+            <a href="#" class="btn btn-outline-secondary btn-rounded">Buy Now</a>
+            <a href="#" class="btn btn-outline-secondary btn-rounded">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small blue pt-4 footer mt-5 bg-dark">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Disclaimer</h5>
+          <p>*Instant savings, otherwise referred to as instant cashback on the Apple Store Online, is available with the purchase
+            of an eligible product for qualifying HDFC Bank Credit Cards & HDFC Bank Credit Card EMI only. Minimum transaction
+            value of ₹10001.00 applies. Click here to see instant savings amounts and eligible devices. Instant savings is
+            available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms
+            and conditions between you and your card-issuing bank.
+            A subscription is required for Apple TV+.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Shop</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">iPhone</a>
+            </li>
+            <li>
+              <a href="#!">Mac</a>
+            </li>
+            <li>
+              <a href="#!">iPad</a>
+            </li>
+            <li>
+              <a href="#!">TV+</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Account</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Login/Register</a>
+            </li>
+            <li>
+              <a href="#!">Order Status</a>
+            </li>
+            <li>
+              <a href="#!">Wishlist</a>
+            </li>
+            <li>
+              <a href="#!">Shopping Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3" style="background-color: #24252A;">
+      © 2023 Apple Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function addToCart() {
+      var cartContainer = document.getElementById("cartContainer");
+      var cartItem = document.createElement("div");
+      cartItem.innerHTML = "<h4>Item: Iphone 14 Pro</h4><p>Price: $999</p><a href='#' class='btn btn-danger' onclick='removeFromCart()'>Remove from Cart</a>";
+      cartContainer.appendChild(cartItem);
+    }
+
+    function removeFromCart() {
+      var cartContainer = document.getElementById("cartContainer");
+      cartContainer.innerHTML = "";
+    }
+  </script>
+
+</body>
+
+</html>
